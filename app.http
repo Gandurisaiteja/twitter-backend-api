@@ -1,0 +1,63 @@
+#API1
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+#API 2
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+#API 3
+GET http://localhost:3000/user/tweets/feed/
+
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+#API 4
+GET http://localhost:3000/user/following/
+
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+#API 5
+GET http://localhost:3000/user/followers/
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+#API 6
+GET http://localhost:3000/tweets/:tweetId/
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+
+#API 7
+GET http://localhost:3000/tweets/:tweetId/likes/
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+#API 8
+GET http://localhost:3000/tweets/:tweetId/replies/ 
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+#API 9
+GET http://localhost:3000/user/tweets/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+
+POST http://localhost:3000/user/tweets/
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
+Content-Type:application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+
+DELETE http://localhost:3000/tweets/:tweetId/
+Authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzY3OTc3OTYwfQ.IJeoY9ntStvDCoFv3Q4QLBLLP4BufjHauTPM7yaS0r0
